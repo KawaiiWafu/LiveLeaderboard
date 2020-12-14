@@ -10,11 +10,15 @@ def main():
     results = [i[0] for i in runners_list]
     return render_template('base.html', runners=results)
 
+# Should implement password / secret key
 @app.route('/update/<runner>/<int:split>', methods=('GET', 'POST'))
 def update(runner, split):
     runners[runner] = split
     return
 
+# Can be used for clearing the leaderboard, not safe without secret key / password
+'''
 @app.route('/clear')
 def clear():
     runners.clear()
+'''
