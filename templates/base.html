@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename='spectre.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
   <meta http-equiv="refresh" content="10" />
   <title></title>
   <script src="{{ url_for('static', filename='anime.min.js') }}"></script>
 </head>
 <body>
-    <style>
-        @font-face {
-            font-family: BigJohn;
-            src: url("{{ url_for('static', filename='BIG_JOHN_CZ.otf') }}") format("opentype");
-        }
-        .table tbody tr {
-            background: #bb0026;
-            line-height: 1;
-            border: hidden;
-            color: black;
-            font-family: BigJohn;
-        }
-        .table td, .table th {
-            padding: .35rem .4rem;
-        }
-        .table.table-striped tbody tr:nth-of-type(odd) {
-            background: #6D0015;
-        }
-    </style>
-    <table class="table table-striped table-hover" style="width: 200px">
+    <table class="table table-striped table-hover tw">
       <tbody>
         {% for r in runners %}
         <tr class="ani1">
