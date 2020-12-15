@@ -1,0 +1,24 @@
+@font-face {
+    font-family: BigJohn;
+    src: url("/static/BIG_JOHN_CZ.otf") format("opentype");
+}
+
+.table tbody tr {
+    background: #bb0026;
+    line-height: 1;
+    border: hidden;
+    color: black;
+    font-family: BigJohn;
+}
+
+.table td, .table th {
+    padding: .35rem .4rem;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+    background: #6D0015;
+}
+
+.tw {
+    width: 200px;
+}
